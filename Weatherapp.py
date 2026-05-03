@@ -75,7 +75,7 @@ class weatherapp(QWidget):
         self.get_weather_button.clicked.connect(self.get_weather) #works when buttom clicked
 
     def get_weather(self):
-        api_key = "a324c579a283975864f6f91cc46f0e52"
+        api_key = "YOUR_API_KEY"
         city = self.city_input.text()
         url = f"https://api.openweathermap.org//data//2.5//weather?q={city}&appid={api_key}"
         try:
